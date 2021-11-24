@@ -7,11 +7,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/shortcutIcon.png">
     <script src="./main.js" defer></script>
     <title>Weather App</title>
 </head>
 <body>
     <div class="card">
+        
+        <div class="weather loading">
+            <div class="clima">
+                <div class="icon-desc">
+                    <h1 class="temp">51°</h1>
+                    <div class="description">bad cloudy</div>
+                </div>
+                <img src="./img/03d.png" alt="" class="icon">
+            </div>
+            
+            <div class="humidity">Humidade: 60%</div>
+            <div class="wind">Ventos: 6.2km/h</div>
+
+            <h2 class="city">Clima em Denver</h2>
+            
+        </div>
         <div class="search">
             <input type="text" class="search-bar" placeholder="Search">
             <button>
@@ -21,17 +38,6 @@
                     </path>
                 </svg>
             </button>
-        </div>
-        <div class="weather loading">
-            <h2 class="city">Clima em Denver</h2>
-            <h1 class="temp">51°</h1>
-            <div class="flex-box">
-                <img src="https://openweathermap.org/img/wn/04d.png" alt="" class="icon">
-                <div class="description">bad cloudy</div>
-            </div>
-            <div class="humidity">Humidade: 60%</div>
-            <div class="wind">Ventos: 6.2km/h</div>
-
         </div>
     </div>
 </body>

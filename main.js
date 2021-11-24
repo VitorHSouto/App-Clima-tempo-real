@@ -20,13 +20,16 @@ let weather = {
         const { icon, description } = data.weather[0];
         const { temp, humidity } = data.main;
         const { speed } = data.wind;
-        console.log(name, icon, description, temp, humidity, speed); 
+        const { country } = data.sys;
+        /*console.log(country);
+        console.log(name, icon, description, temp, humidity, speed); */
 
-        document.querySelector(".city").innerHTML = "Clima em " + name;
-        document.querySelector(".icon").src = "https://openweathermap.org/img/wn/"+ icon + ".png"
+        document.querySelector(".city").innerHTML = name + " - " + country;
+        //document.querySelector(".icon").src = "https://openweathermap.org/img/wn/"+ icon + ".png"
+        document.querySelector(".icon").src = "./img/"+ icon + ".png"
         document.querySelector(".description").innerHTML = description;
         var temperatura = parseFloat(temp).toFixed();
-        document.querySelector(".temp").innerHTML = temperatura.toString() + "°C";
+        document.querySelector(".temp").innerHTML = temperatura.toString() + "° C";
         document.querySelector(".humidity").innerHTML = "Humidade: " + humidity + "%";
         document.querySelector(".wind").innerHTML = "Velocidade dos Ventos: " + speed + "Km/h";
     
