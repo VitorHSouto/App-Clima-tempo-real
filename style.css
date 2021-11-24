@@ -1,0 +1,98 @@
+
+body{
+font-family: 'Open Sans', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #222;
+    /*background-image: url(https://source.unsplash.com/1600x900/?landscape);*/
+}
+
+.card{
+    background: #000000d0;
+    color: #eaeaea;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 400px;
+    margin: 1em;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background-color: #7c7c7c2b;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    color: white;
+    margin: 0.5em;
+    cursor: pointer;
+
+    transition: 0.2s ease-in-out;
+}
+
+button:hover{
+    background-color: #b9b9b92b;
+}
+
+input.search-bar {
+    height: 1.8em;
+    width: calc(100% - 180px);
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    padding: 5px 5px 5px 22px;
+    background-color: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 105%;
+}
+
+input.search-bar:hover{
+    background-color: #8a8a8a2f;
+}
+
+.temp{
+    margin: 0;
+    font-size: 250%;
+    margin-bottom: 0.4em;
+}
+
+.flex-box{
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    padding-right: 5px;
+    margin-left: -5px;
+}
+
+.description{
+    text-transform: capitalize;
+}
+
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading::after{
+    visibility: visible;
+    content: "Loading...";
+    color: whitesmoke;
+    position: absolute;
+    top: 0;
+}
