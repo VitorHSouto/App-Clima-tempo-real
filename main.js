@@ -36,8 +36,8 @@ let weather = {
         document.querySelector(".description").innerHTML = description;
         var temperatura = parseFloat(temp).toFixed();
         document.querySelector(".temp").innerHTML = temperatura.toString() + "° C";
-        document.querySelector(".humidity").innerHTML = "Humidade: " + humidity + "%";
-        document.querySelector(".wind").innerHTML = "Velocidade dos Ventos: " + speed + "Km/h";
+        document.querySelector(".humidity").innerHTML = humidity + "%";
+        document.querySelector(".wind").innerHTML = speed + " km/h";
     
         document.querySelector(".weather").classList.remove("loading");
     

@@ -94,8 +94,7 @@ input.search-bar:hover{
     font-size: 90%;
     font-weight: 900;
     text-align: center;
-    margin-top: 6%;
-    margin-bottom: 5%;
+    margin-bottom: 7%;
 }
 
 .weather.loading{
@@ -111,3 +110,55 @@ input.search-bar:hover{
     position: absolute;
     top: 0;
 }
+
+.container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 8%;
+}
+
+.humidity-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.humidity-container svg{
+    padding-right: 11px;
+    height: 100%;
+}
+
+.humidity-text{
+    margin-top: -3px;
+    font-size: 90%;
+}
+
+.humidity{
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.wind-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wind-container svg{
+    padding-right: 11px;
+    height: 100%;
+}
+
+.wind-text{
+    margin-top: -3px;
+    font-size: 90%;
+}
+
+.wind{
+    font-size: 200%;
+    font-weight: bold;
+}  
+
