@@ -8,7 +8,13 @@ let weather = {
                      this.apiKey;
 
         fetch(url)
-        .then((response) => response.json())
+        .then((response) => {
+          if (!response.ok) {
+            alert("Clima não encontrado.");
+            throw new Error("Clima não encontrado.");
+          }
+          return response.json();
+        })
         .then((data) => {
             this.displayWeather(data);
         })
