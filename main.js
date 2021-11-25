@@ -11,7 +11,7 @@ let weather = {
         .then((response) => {
           if (!response.ok) {
             alert("Cidade não encontrada.");
-            throw new Error("Clima não encontrada.");
+            throw new Error("Cidade não encontrada.");
           }
           return response.json();
         })
