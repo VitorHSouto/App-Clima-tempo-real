@@ -4,14 +4,14 @@ let weather = {
     {
         const url = "https://api.openweathermap.org/data/2.5/weather?q=" +
                      city +
-                     "&units=metric&appid=" +
+                     "&units=metric&lang=pt_br&appid=" +
                      this.apiKey;
 
         fetch(url)
         .then((response) => {
           if (!response.ok) {
-            alert("Clima não encontrado.");
-            throw new Error("Clima não encontrado.");
+            alert("Cidade não encontrada.");
+            throw new Error("Clima não encontrada.");
           }
           return response.json();
         })
@@ -61,4 +61,4 @@ document
     }
   });
 
-weather.fetchWeather("Uberaba");
+weather.fetchWeather("New York");
